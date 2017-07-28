@@ -4,12 +4,12 @@
     <link rel="shortcut icon" href="http://dumontech.com.br/icon/robot_4_logo_HD_multi_3_cut.ico" />
 <!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 </head>
-<frameset border="0" rows="100%,*" cols="100%" frameborder="no">
+<!-- <frameset border="0" rows="100%,*" cols="100%" frameborder="no">
     <frame name="TopFrame" scrolling="yes" src="https://roprotech3d.wixsite.com/aulastech">
-<!--     <frame name="BottomFrame" scrolling="no" noresize> -->
+    <frame name="BottomFrame" scrolling="no" noresize>
 <noframes>
 </noframes>
-</frameset>
+</frameset> -->
 <!--     <style>
         html, body {
         border: 0px;
@@ -30,4 +30,28 @@
     </body> -->
 <!--     <iframe src="https://roprotech3d.wixsite.com/aulastech" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
     </iframe> -->
+    
+    <style>
+        .myIframe {
+            position: relative;
+            padding-bottom: 65.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: auto; 
+            -webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY 
+            border: solid black 1px;
+            
+        } 
+        .myIframe iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    
+    <div class='myIframe' > 
+        <iframe> </iframe> 
+    </div>
 </html>
